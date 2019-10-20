@@ -33,47 +33,42 @@
     <div class="container">
         <div class="questionContainer">
             <div class="row">
-                <h2 id="question">Which one of following is included in worlds 7 wonders.</h2>
+                <h2 id="question"></h2>
             </div>
             <div class="row">
                 <div class="col-md-6 ml-auto optionContainer">
-                    <div class="form-check">
-                        <h3 id="option1" class="form-check-label">
-                            Taj Mahal
-                        </h3>
-                    </div>
+                    <h3 id="option1" class="option form-check-label">
+                    </h3>
                 </div>
                 <div class="col-md-6 ml-auto optionContainer">
-                    <div class="form-check">
-                        <h3 id="option2" class="form-check-label">
-                            Niagara Falls
-                        </h3>
-                    </div>
+                    <h3 id="option2" class="option form-check-label">
+                    </h3>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-6 ml-auto optionContainer">
-                    <div class="form-check">
-                    <h3 id="option3" class="form-check-label">
-                        Statue of Liberty
+                    <h3 id="option3" class="option form-check-label">
                     </h3>
-                    </div>
                 </div>
-                <div class="col-md-6 ml-auto optionContainer">
-                    <div class="form-check">
-                    <h3 id="option4" class="form-check-label">
-                        Atalantic Ocean
+                <div id="fourthOption" class="col-md-6 ml-auto optionContainer">
+                    <h3 id="option4" class="option form-check-label">
                     </h3>
-                    </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-2">
                     <button class="previous round">&#8249;</button>
                 </div>
-                <div class="col-md-8"></div>
+                <div class="col-md-3"></div>
+                <h2 id='remaining-time' class="col-md-2">Aditya The Great</h2>
+                <div class="col-md-3"></div>
                 <div class="col-md-2">
                     <button class="next round">&#8250;</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="progress">
+                    <div id= "gameProgress" class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
             </div>
         </div>
@@ -89,22 +84,22 @@
     </div>
 
     <div id= "startModal" class="modal" tabindex="-1" role="dialog">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title">Modal title</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  <p>15 Correct answers to win the game!</p>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-primary">OK</button>
-                </div>
-              </div>
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
             </div>
-          </div>
+            <div class="modal-body">
+                <p>15 Correct answers to win the game!</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary">OK</button>
+            </div>
+            </div>
+        </div>
+    </div>
   </body>
 </html>

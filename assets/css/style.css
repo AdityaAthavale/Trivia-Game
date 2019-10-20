@@ -26,14 +26,13 @@ h1 {
 }
 
 .optionContainer {
-    margin-top: 20px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    /* margin: 20px; */
     padding: 20px;
     text-align: center;
-}
-
-.form-check {
     border: 1px solid #4CAF50;
-    padding: 20px;
 }
 
 .buttonRowContainer {
@@ -45,17 +44,29 @@ h1 {
     width: 50px;
     font-size: 30px;
     margin-right: 30px;
+    margin-top: 10px;
 }
 
 .previous {
     width: 50px;
     font-size: 30px;
     margin-left: 30px;
+    margin-top: 10px;
 }
+
+.correctAnswer {
+    background-color: green;
+}
+
+.wrongAnswer {
+    background-color: red;
+}
+
 
 #question {
     width: 95%;
     height: 100%;
     margin-left: 5px;
     margin-right: 5px;
+    text-align: center;
 }
