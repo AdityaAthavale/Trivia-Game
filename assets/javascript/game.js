@@ -5,6 +5,9 @@ let perSecondTimer
 let remainingTimeSeconds = 30
 let numberOfCorrectAnswers = 0
 
+var colors = ['darkGreen', 'purple'];
+var marqueeColorIndex = 0;
+
 $(document).ready(function() {
     $('.questionContainer').hide()
     $.ajax({
@@ -48,6 +51,17 @@ $(document).ready(function() {
             }
         }
     })
+
+    setInterval(function () {
+        $('#hint').css({
+          backgroundColor: colors[marqueeColorIndex],
+        });
+        if (!colors[marqueeColorIndex]) {
+             marqueeColorIndex = 0;
+        } else {
+             marqueeColorIndex++;
+        }
+     }, 5000);
 })
 
 function loadNextQuestion() {

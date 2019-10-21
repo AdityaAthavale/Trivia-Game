@@ -55,11 +55,13 @@ h1 {
 }
 
 .correctAnswer {
-    background-color: green;
+    background-color: darkgreen;
+    color: floralwhite;
 }
 
 .wrongAnswer {
-    background-color: red;
+    background-color: darkred;
+    color: floralwhite;
 }
 
 
@@ -69,4 +71,8 @@ h1 {
     margin-left: 5px;
     margin-right: 5px;
     text-align: center;
+}
+
+marquee {
+    color: ghostwhite;
 }
